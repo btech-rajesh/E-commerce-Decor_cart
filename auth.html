@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Login Page</title>
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+    <!-- signin/up page -->
+    <button type="button" class="signBtn" onclick="window.location.href='index.html';">SignIn/Up</button>
+
+    <a href="index.html" class="logo"></a>
+
+    <!-- Modal for sign-in and sign-up -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <!-- Tab links for switching between Sign In and Sign Up -->
+            <div class="tab">
+                <button id="signInTab" class="tablinks active">Sign In</button>
+                <button id="signUpTab" class="tablinks">Sign Up</button>
+            </div>
+
+            <!-- Sign In Form -->
+            <div id="signInForm" class="form-container">
+                <form action="signIn.php" method="POST">
+                    <div class="form-group">
+                        <label for="signin-email">Email</label>
+                        <input type="email" id="signin-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signin-password">Password</label>
+                        <input type="password" id="signin-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Sign In</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div id="signUpForm" class="form-container" style="display: none;">
+                <form action="signUp.php" method="POST">
+                    <div class="form-group">
+                        <label for="signup-name">Name</label>
+                        <input type="text" id="signup-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+</html>

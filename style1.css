@@ -1,0 +1,151 @@
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tab Buttons */
+.tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.tab button {
+    flex: 1;
+    padding: 0.8rem;
+    background: #f1f1f1;
+    border: none;
+    cursor: pointer;
+}
+
+.tab button.active {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* Form Content */
+.form-content {
+    display: none;
+}
+
+.form-content.active {
+    display: block;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+.cart-button {
+    /* background-color: var(--main-color); Replace with a color, e.g., #3498db */
+    /* color: grey; */
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cart-button:hover {
+    background-color: #2c81b7; /* Darker shade for hover effect */
+    cursor: pointer;
+}
+
+/* Navbar container */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Logo and Menu Icon */
+.logo {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Navbar links */
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+/* Search bar container */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Search input */
+.search-input {
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Search button */
+.search-btn {
+    padding: 0.4rem 1rem;
+    background-color: lightyellow;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Language selector container */
+.language-selector {
+    margin-left: 1rem;
+}
+
+.language-selector select {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+
+

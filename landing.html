@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="landing.css">
+    
+</head>
+<body>
+    <header>
+        <a href="auth.html" class="logo">
+            <img src="dc_logo.png" alt="">
+        Decor_Cart</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home01">Home_01</a></li>
+            <li><a href="#about" >About</a></li>
+            <li><a href="#services" >Services</a></li>
+            <li><a href="#contact_us" onclick="showSection('contact_us')">Contact Us</a></li>
+            <div class="language-selector">
+                <select id="language-dropdown">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="hi">Hindi</option>
+                    
+                    <!-- Add other language s as needed -->
+                </select>
+            </div>
+            <li><a href="./auth.html" id="authBtn">Login</a></li>
+            </ul>
+            
+            <!-- option selcetor -->
+            
+       </header>
+      
+
+    
+        
+    <main class="main-class">
+        <!-- 1st section -->
+         <section id="home01" class="section_01 active">
+            <div class="landing_page_01">
+               <div class="text-container-home">
+                <h2>Welcome to Decor Cart</h2>
+                <p>Your one-stop shop for home decoration and services</p>
+                <!-- <img src="images/home_landing_img.jpg"> -->
+                <a href="#home01" class="btn">Shop Now</a>
+               </div>
+               <div class="image-container-home">
+                <img src="https://plus.unsplash.com/premium_photo-1684338795288-097525d127f0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Decor Cart Image" class="circular-image">
+            </div>
+            </div>
+         </section>
+                     
+        <!-- 2nd section for landing page -->
+        <section id="about" class="section_02">
+            
+            <div class="about-content">
+                <h2>About Decor Cart</h2>
+                <p>At Decor Cart, we believe that a well-decorated home is a reflection of one’s personality and style. Our mission is to provide you with a wide range of high-quality, unique, and stylish home decor items that help turn any space into a personal sanctuary. From chic furniture pieces to elegant decor accents, we curate products that blend beauty with functionality.</p>
+                <p>Our team is passionate about home design and committed to helping you make your home as unique as you are. With Decor Cart, creating a stylish and comfortable home is easier and more enjoyable. Join us on this journey to inspire and be inspired by the art of home decoration.</p>
+                <a href="#services" class="btn">Discover Our Services</a>
+            </div>
+        </section>
+
+
+
+        <!-- 3rd section for landing page -->
+        <!-- <section id="services" class="section_03">
+            <div class="landing_page_03">
+                <img src="images/shoping2.jpg"  alt="">
+            </div>
+        </section> -->
+        <section id="services" class="services-container">
+            <h2>Our Services</h2>
+            <p>Explore our range of home decor services designed to bring style and comfort to your living spaces.</p>
+            <button class="scroll-button left" onclick="scrollLeft()">&#9664;</button>
+
+            <!-- Service 1 -->
+            <div class="service-section">
+                <div class="service-info">
+                    <h3>Interior Design</h3>
+                    <p>Transform your space with our professional interior design services, tailored to your style and needs.</p>
+                </div>
+                <img src="images/in1.png" alt="" class="service-image">
+                <img src="images/in2.png" alt="" class="service-image">
+            </div>
+        
+            <!-- Service 2 -->
+            <div class="service-section">
+                <div class="service-info">
+                    <h3>Furniture Selection</h3>
+                    <p>Find the perfect pieces for your home from our curated collection of stylish and comfortable furniture.</p>
+                </div>
+                <img src="images/f2.jpg" alt="" class="service-image">
+                <img src="images/f1.jpg" alt="" class="service-image">
+            </div>
+        
+            <!-- Service 3 -->
+            <div class="service-section">
+                <div class="service-info">
+                    <h3>Wall Decor</h3>
+                    <p>Enhance your walls with unique decor options, from artwork to mirrors, to create a captivating ambiance.</p>
+                </div>
+                <img src="images/w1.jpg" alt="" class="service-image">        
+                <img src="images/s2.jpg" alt="" class="service-image">
+                </div>
+        
+            <!-- Service 4 -->
+            <div class="service-section">
+                <div class="service-info">
+                   <div> <h3>Lighting Solutions</h3></div>
+                   <div>                    <p>Brighten your home with our range of lighting solutions designed to add warmth and character to any room.</p>
+                   </div>
+                </div>
+                <img src="images/l1.jpg" alt="" class="service-image">
+                <img src="images/l2.jpg" alt="" class="service-image">
+                <img src="images/l4.jpg" alt="" class="service-image">
+                <!-- <img src="images/l5.jpg" alt="" class="service-image"> -->
+                <img src="images/l6.jpg" alt="" class="service-image">
+                <!-- <img src="images/l3.png" alt="" class="service-image"> -->
+          
+        
+                <!-- Scroll button (right) -->
+                <button class="scroll-button right" onclick="scrollRight()">&#9654;</button>
+            </div>
+        </section>
+        
+        
+
+        <!-- 4section for contact us -->
+        <section id="contact_us" class="section_04">
+            <div class="landing_page_04">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Please fill out the form below to get in touch.</p>
+                
+                <form action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="landing_page_footer">
+            <p>&copy; 2025 Decor Cart. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app2.js"></script>
+</body>
+</html>

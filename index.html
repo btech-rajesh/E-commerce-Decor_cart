@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor Cart - Home Decoration and Service Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <a href="landing.html" class="logo">
+            <img src="dc_logo.png" alt="">
+        Decor_Cart</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#integrated">Integrated Experience</a></li>
+            <!-- <li><a href="./auth.html" id="authBtn">Sign Up / Sign In</a></li> -->
+          
+            </ul>
+            
+            <!-- option selcetor -->
+            <!-- <div class="language-selector">
+                <select id="language-dropdown">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="hi">Hindi</option>
+                     -->
+                    <!-- Add other language s as needed -->
+                <!-- </select>
+            </div> -->
+            <div class="profile">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s" alt="profile">
+            </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-btn">🔍</button>
+            <button   id="cartBtn" class="cart-button">🛒 Cart</button></div>
+        
+         <!-- Cart Button -->
+           
+            
+    
+     </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Decor Cart</h2>
+                <p>Your one-stop shop for home decoration and services</p>
+                <a href="#home" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+
+<!-- product -->
+        <section id="products" class="container">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="images/watch_wall.png" alt="Vintage Wall Clock">
+                    <h3>Vintage Wall Clock</h3>
+                    <p>$49.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/platter_set (2).png" alt="Succulent Planter Set">
+                    <h3>Succulent Planter Set</h3>
+                    <p>$29.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/floor_lamp.png" alt="Modern Floor Lamp">
+                    <h3>Modern Floor Lamp</h3>
+                    <p>$89.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- service -->
+        <section id="services" class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <img src="images/furniture_assembly.png" alt="Furniture Assembly">
+                    <h3>Furniture Assembly</h3>
+                    <p>Starting at $75</p>
+                    <button class="btn">Book Service</button>
+                </div>
+                <div class="service-card">
+                    <img src="images/wall_mounting.png" alt="Wall Mounting">
+                    <h3>Wall Mounting</h3>
+                    <p>Starting at $60</p>
+                    <button class="btn">Book Service</button>
+                </div>
+                <div class="service-card">
+                    <img src="images/wall_painting.png" alt="Interior Painting">
+                    <h3>Interior Painting</h3>
+                    <p>Starting at $200</p>
+                    <button class="btn">Book Service</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 3 -->
+        <section id="integrated" class="container">
+            <div class="integrated-experience">
+                <h3>Integrated Shopping and Service Experience</h3>
+                <p>Purchase décor items and book installation services in one go!</p>
+                <form id="integratedForm">
+                    <div class="form-group">
+                        <label for="item">Select Item</label>
+                        <select id="item" name="item">
+                            <option value="items">Choose an item</option>
+                            <option value="clock">Vintage Wall Clock</option>
+                            <option value="planter">Succulent Planter Set</option>
+                            <option value="lamp">Modern Floor Lamp</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Select Service</label>
+                        <select id="service" name="service">
+                            <option value="">Choose a service</option>
+                            <option value="assembly">Furniture Assembly</option>
+                            <option value="mounting">Wall Mounting</option>
+                            <option value="painting">Interior Painting</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Add to Cart with Service</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Decor Cart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="chatButton">💬</button>
+    <div id="chatWindow">
+        <div id="chatHeader">
+            <span>Customer Support</span>
+            <button id="closeChatButton">X</button>
+        </div>
+        <div id="chatMessages"></div>
+        <div id="chatInput">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button id="sendMessageButton">Send</button>
+        </div>
+    </div>
+
+  <script src="app.js"></script>
+  
+</body>
+</html>
